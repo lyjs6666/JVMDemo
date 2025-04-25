@@ -1,4 +1,4 @@
-package com.heima;
+package com.lyjs;
 
 public class ClInitTest {
 //  //clinit方法是为了给类变量分配空间，执行静态代码块中的代码，如果没有，直就不会生成clinit方法

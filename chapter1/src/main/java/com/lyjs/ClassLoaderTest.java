@@ -1,4 +1,4 @@
-package com.heima;
+package com.lyjs;
 
 public class ClassLoaderTest {
 
