@@ -23,9 +23,9 @@ public class VariableTableTest {
         System.out.println("s = " + s);
 
         Integer num;
-/**
- * 局部变量使用前必须赋值
- */
+        /**
+         * 局部变量使用前必须赋值
+         */
     }
 
 }
