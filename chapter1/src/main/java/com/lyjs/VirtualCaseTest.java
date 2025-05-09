@@ -52,6 +52,9 @@ public class VirtualCaseTest {
     }
 
 
+    static interface lam{
+        void p();
+    }
 
     public static void main(String[] args) {
 
@@ -70,6 +73,7 @@ public class VirtualCaseTest {
          * son
          *
          */
+
     }
 
 }
