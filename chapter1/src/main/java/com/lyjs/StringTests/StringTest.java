@@ -1,8 +1,6 @@
-package com.lyjs;
+package com.lyjs.StringTests;
 
 import org.junit.Test;
-
-import java.lang.invoke.StringConcatFactory;
 
 public class StringTest {
     /**
