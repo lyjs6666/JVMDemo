@@ -1,5 +1,7 @@
 package com.lyjs.StringTests;
 
+import org.junit.Test;
+
 public class StringTest1 {
 
     public static void main(String[] args) {
@@ -25,4 +27,33 @@ public class StringTest1 {
          * 譬如上面的变量a，然后这个对象引用字符串常量池中的”a“的引用
          */
     }
+
+    @Test
+    public void test1(){
+        String a=new String("1")+new String("1");//编译时将1放入常量池
+
+        a.intern();
+        String b="11";//编译时就将11放入常量池
+
+        System.out.println(a==b);//false
+        /**
+         * 编译时：
+         * Class 文件的常量池表中包含 "1" 和 "11"（字面量）。
+         * 此时尚未创建任何运行时对象。
+         * 运行时：
+         * 执行 new String("1") + new String("1")：
+         * 在堆中创建 "11" 对象（a 指向它）。
+         * 运行时常量池中的 "11" 尚未被加载。
+         * 执行 a.intern()：
+         * 发现运行时常量池无 "11"，将 a 的引用存入常量池。
+         * 执行 String b = "11"：
+         * 从运行时常量池获取 "11"，直接指向 a 的引用。
+         */
+    }
+    @Test
+    public void test11(){
+
+
+    }
+    
 }
